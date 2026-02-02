@@ -1,4 +1,4 @@
 mountpoints:
   /:
-    url: https://da.live/#/pnamadobe/exp-cat-nfl/content
+    url: https://content.da.live/pnamadobe/exp-cat-nfl
     type: markup
