@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NFL Brand Portal | Guidelines</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/blocks/video-hero/video-hero.css">
+  <link rel="stylesheet" href="/blocks/cards-swatch/cards-swatch.css">
+  <link rel="stylesheet" href="/blocks/columns-specimen/columns-specimen.css">
+  <link rel="stylesheet" href="/blocks/cards-gallery/cards-gallery.css">
+  <script src="https://unpkg.com/wavesurfer.js@7"></script>
+  <script src="/scripts/aem.js" type="module"></script>
+  <script src="/scripts/scripts.js" type="module"></script>
+  <style>
+    /* Side Navigation */
+    .side-nav {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: 100vh;
+      background: #000;
+      padding: 40px 20px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .side-nav .nav-logo {
+      font-family: 'Freshman', sans-serif;
+      font-size: 28px;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    .side-nav .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .side-nav .nav-links a {
+      color: #666;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+
+    .side-nav .nav-links a:hover,
+    .side-nav .nav-links a.active {
+      color: #fff;
+    }
+
+    /* Adjust main content for side nav */
+    body {
+      margin-left: 200px;
+    }
+
+    main {
+      max-width: 100%;
+    }
+
+    /* WaveSurfer Audio Player */
+    .embed-audio-wavesurfer {
+      width: 100%;
+      max-width: 800px;
+      margin: 32px auto;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-left: 4px solid #D50A10;
+      border-radius: 4px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .embed-audio-wavesurfer #waveform {
+      margin-bottom: 24px;
+    }
+
+    .embed-audio-wavesurfer .btn-play {
+      display: inline-block;
+      background-color: #D50A10;
+      color: #fff;
+      border: none;
+      padding: 14px 40px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 2px;
+      font-family: 'Freshman', sans-serif;
+      transition: background-color 0.2s ease;
+    }
+
+    .embed-audio-wavesurfer .btn-play:hover {
+      background-color: #b30810;
+    }
+
+    /* Responsive: hide nav on mobile */
+    @media (max-width: 900px) {
+      .side-nav {
+        display: none;
+      }
+      body {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Side Navigation -->
+  <nav class="side-nav">
+    <div class="nav-logo">NFL</div>
+    <ul class="nav-links">
+      <li><a href="#color-palette">01 Colors</a></li>
+      <li><a href="#typography">02 Typography</a></li>
+      <li><a href="#photo-principles">03 Photography</a></li>
+      <li><a href="#sonic-mnemonic">04 Sonic</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div>
+      <div class="video-hero autoplay">
+        <div>
+          <div><a href="https://pnamadobe.github.io/nfl-brand-guidelines/2025%20Playoff%20Mini-Movie%20Lions%20Eagles.mp4">Video</a></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 id="identity-standards">IDENTITY <strong>STANDARDS</strong></h1>
+    </div>
+    <div>
+      <h2 id="color-palette">01 Color Palette</h2>
+      <div class="cards-swatch">
+        <div><div></div><div><p><strong>Gridiron Black</strong></p><p>#010101</p></div></div>
+        <div><div></div><div><p><strong>Legacy Blue</strong></p><p>#002244</p></div></div>
+        <div><div></div><div><p><strong>Impact Blue</strong></p><p>#0085CA</p></div></div>
+        <div><div></div><div><p><strong>Shield Red</strong></p><p>#D50A10</p></div></div>
+      </div>
+    </div>
+    <div>
+      <h2 id="typography">02 Typography</h2>
+      <div class="columns-specimen">
+        <div><div>
+          <p><strong>FRESHMAN REGULAR</strong></p>
+          <p>Freshman is the primary display typeface for the NFL Global Brand. It is used for headlines, jersey numbering, and high-impact stadium graphics.</p>
+          <p>ABCDEFGHIJKLM NOPQRSTUVWXYZ 1234567890</p>
+        </div></div>
+      </div>
+    </div>
+    <div>
+      <h2 id="photo-principles">03 Photo Principles</h2>
+      <div class="cards-gallery">
+        <div><div><picture><img src="./images/dbcdf02efe239f12213bee2350de84ed.png" alt="The Fans" loading="lazy"></picture></div><div><strong>The Fans</strong></div></div>
+        <div><div><picture><img src="./images/fc6eeb97d03fbf5f958119c41790ac42.png" alt="The Future" loading="lazy"></picture></div><div><strong>The Future</strong></div></div>
+        <div><div><picture><img src="./images/fd0d39349365b85b89c32f2272a4d437.png" alt="Intensity" loading="lazy"></picture></div><div><strong>Intensity</strong></div></div>
+        <div><div><picture><img src="./images/abb2871a352661e79ae4b6c8118bc982.png" alt="The Huddle" loading="lazy"></picture></div><div><strong>The Huddle</strong></div></div>
+        <div><div><picture><img src="./images/c5befcbcea15b85103994166c39f905d.png" alt="The Grit" loading="lazy"></picture></div><div><strong>The Grit</strong></div></div>
+        <div><div></div><div><strong>View Gallery</strong></div></div>
+      </div>
+    </div>
+    <div>
+      <h2 id="sonic-mnemonic">04 Sonic Mnemonic</h2>
+      <div class="embed-audio-wavesurfer">
+        <div id="waveform"></div>
+        <button class="btn-play" id="playToggle">PLAY THEME</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Initialize WaveSurfer
+    document.addEventListener('DOMContentLoaded', () => {
+      const wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: '#333',
+        progressColor: '#0085CA',
+        cursorColor: '#D50A10',
+        barWidth: 3,
+        barGap: 2,
+        barRadius: 2,
+        height: 80,
+        url: './nfl-theme-music.mp3'
+      });
+
+      const btn = document.getElementById('playToggle');
+      btn.addEventListener('click', () => {
+        wavesurfer.playPause();
+      });
+
+      wavesurfer.on('play', () => {
+        btn.textContent = 'PAUSE';
+      });
+
+      wavesurfer.on('pause', () => {
+        btn.textContent = 'PLAY THEME';
+      });
+
+      wavesurfer.on('finish', () => {
+        btn.textContent = 'PLAY THEME';
+      });
+
+      // Scroll spy for navigation
+      const sections = document.querySelectorAll('h2[id]');
+      const navLinks = document.querySelectorAll('.side-nav .nav-links a');
+
+      const observerOptions = {
+        rootMargin: '-20% 0px -80% 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => observer.observe(section));
+    });
+  </script>
+</body>
+</html>

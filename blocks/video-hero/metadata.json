@@ -1,0 +1,38 @@
+{
+  "variantName": "video-hero",
+  "baseBlock": "video",
+  "version": "1.0.0",
+  "created": "2026-02-02T15:48:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://pnamadobe.github.io/nfl-brand-guidelines/prototype.html",
+    "originPage": "NFL Brand Guidelines page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "hero-video",
+    "imagePattern": "video"
+  },
+  "contentPattern": {
+    "structure": "fullwidth video with optional poster",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand guideline pages",
+      "landing pages with video hero",
+      "media showcase pages"
+    ],
+    "notSuitableFor": [
+      "inline video embeds",
+      "video galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/nfl-brand-guidelines/prototype"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-02T15:48:00.000Z"
+  }
+}

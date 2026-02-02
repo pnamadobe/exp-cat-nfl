@@ -1,0 +1,39 @@
+{
+  "variantName": "embed-audio",
+  "baseBlock": "embed",
+  "version": "1.0.0",
+  "created": "2026-02-02T15:48:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://pnamadobe.github.io/nfl-brand-guidelines/prototype.html",
+    "originPage": "NFL Brand Guidelines page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "audio-player",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "audio waveform + play button",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "audio showcases",
+      "sonic brand guidelines",
+      "podcast embeds"
+    ],
+    "notSuitableFor": [
+      "video embeds",
+      "social media embeds",
+      "iframe content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/nfl-brand-guidelines/prototype"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-02T15:48:00.000Z"
+  }
+}

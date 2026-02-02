@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-specimen",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-02-02T15:48:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://pnamadobe.github.io/nfl-brand-guidelines/prototype.html",
+    "originPage": "NFL Brand Guidelines page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "typography-specimen",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "font name + description + character set",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "typography showcases",
+      "font specimen displays",
+      "design system documentation"
+    ],
+    "notSuitableFor": [
+      "side-by-side comparisons",
+      "image galleries",
+      "multi-column layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/nfl-brand-guidelines/prototype"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-02T15:48:00.000Z"
+  }
+}

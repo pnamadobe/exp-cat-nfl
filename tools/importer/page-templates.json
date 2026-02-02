@@ -1,0 +1,31 @@
+{
+  "templates": [
+    {
+      "name": "nfl-brand-guidelines",
+      "urls": ["https://pnamadobe.github.io/nfl-brand-guidelines/prototype.html"],
+      "description": "NFL Brand Guidelines page with video hero, color palette, typography, photo principles, and sonic mnemonic sections",
+      "blocks": [
+        {
+          "name": "video-hero",
+          "instances": ["section.hero-viewport", ".hero-viewport", ".video-wrapper"]
+        },
+        {
+          "name": "cards-swatch",
+          "instances": ["#colors .palette-grid", ".palette-grid"]
+        },
+        {
+          "name": "columns-specimen",
+          "instances": ["#typography .type-specimen", ".type-specimen"]
+        },
+        {
+          "name": "cards-gallery",
+          "instances": ["#photography .photo-grid", ".photo-grid"]
+        },
+        {
+          "name": "embed-audio",
+          "instances": ["#sonic.sonic-box", ".sonic-box"]
+        }
+      ]
+    }
+  ]
+}

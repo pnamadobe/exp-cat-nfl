@@ -11,17 +11,23 @@
  */
 
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* NFL Brand colors */
+  --background-color: #0a0a0a;
+  --light-color: #1a1a1a;
+  --dark-color: #000;
+  --text-color: #fff;
+  --link-color: #0085CA;
+  --link-hover-color: #006ba3;
+
+  /* NFL Brand palette */
+  --nfl-gridiron-black: #010101;
+  --nfl-legacy-blue: #002244;
+  --nfl-impact-blue: #0085CA;
+  --nfl-shield-red: #D50A10;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: 'Freshman', roboto, roboto-fallback, sans-serif;
+  --heading-font-family: 'Freshman', roboto-condensed, roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -38,6 +44,15 @@
 
   /* nav height */
   --nav-height: 64px;
+}
+
+/* Freshman font - NFL Display typeface */
+@font-face {
+  font-family: 'Freshman';
+  src: url('/fonts/Freshman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* fallback fonts */

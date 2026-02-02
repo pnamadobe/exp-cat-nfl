@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-gallery",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-02-02T15:48:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://pnamadobe.github.io/nfl-brand-guidelines/prototype.html",
+    "originPage": "NFL Brand Guidelines page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "standard",
+    "purpose": "photo-gallery",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + label overlay",
+    "buttonCount": 0,
+    "imageCount": 5
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "photo galleries",
+      "portfolio showcases",
+      "brand photography displays"
+    ],
+    "notSuitableFor": [
+      "product listings",
+      "text-heavy cards",
+      "article previews"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/nfl-brand-guidelines/prototype"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-02T15:48:00.000Z"
+  }
+}

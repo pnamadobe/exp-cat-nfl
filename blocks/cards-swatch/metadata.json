@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-swatch",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-02-02T15:48:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://pnamadobe.github.io/nfl-brand-guidelines/prototype.html",
+    "originPage": "NFL Brand Guidelines page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "color-palette",
+    "imagePattern": "color-swatch"
+  },
+  "contentPattern": {
+    "structure": "color swatch + name + hex value",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand guideline pages",
+      "color palette displays",
+      "design system documentation"
+    ],
+    "notSuitableFor": [
+      "product cards",
+      "article cards",
+      "image galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/nfl-brand-guidelines/prototype"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-02T15:48:00.000Z"
+  }
+}
