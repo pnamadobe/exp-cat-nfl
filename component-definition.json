@@ -329,6 +329,25 @@
               ]
             }
           }
+        },
+        {
+          "title": "Player Spotlight",
+          "id": "player-spotlight",
+          "model": "player-spotlight",
+          "plugins": {
+            "da": {
+              "name": "player-spotlight",
+              "unsafeHTML": "<div class=\"player-spotlight\"><div><div>/content/dam/26H1/nfl/patrick-mahomes</div></div></div>",
+              "columns": 1,
+              "rows": 1,
+              "fields": [
+                {
+                  "name": "cfPath",
+                  "selector": "div>div"
+                }
+              ]
+            }
+          }
         }
       ]
     }

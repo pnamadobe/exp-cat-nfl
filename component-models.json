@@ -261,5 +261,17 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "player-spotlight",
+    "fields": [
+      {
+        "component": "text",
+        "name": "cfPath",
+        "label": "Content Fragment path",
+        "valueType": "string",
+        "required": true
+      }
+    ]
   }
 ]
