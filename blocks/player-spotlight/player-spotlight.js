@@ -20,10 +20,12 @@ const PERSISTED_QUERY = 'nfl-player-by-path';
  * @returns {Promise<object|null>} the fragment fields, or null on failure
  */
 async function fetchPlayer(path) {
-  // Persisted-query GET: params are appended as ;name=value with the value
-  // URL-encoded (slashes become %2F).
-  const url = `${AEM_PUBLISH}/graphql/execute.json/${GRAPHQL_CONFIG}/${PERSISTED_QUERY}`
-    + `;path=${encodeURIComponent(path)}`;
+  // Persisted-query GET: params are appended as ;name=value. The whole
+  // ;path=<value> suffix must be encoded as one unit (AEM decodes the path
+  // segment once, then parses the matrix param) — encoding only the value
+  // leaves a literal ;path=%2F... that AEM fails to resolve.
+  const param = encodeURIComponent(`;path=${path}`);
+  const url = `${AEM_PUBLISH}/graphql/execute.json/${GRAPHQL_CONFIG}/${PERSISTED_QUERY}${param}`;
   try {
     const resp = await fetch(url);
     if (!resp.ok) return null;
