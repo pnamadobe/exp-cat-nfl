@@ -1,0 +1,75 @@
+{
+    "/content/dam/26H1/nfl/patrick-mahomes": {
+        "playerName": "Patrick Mahomes",
+        "jerseyNumber": 15,
+        "position": "Quarterback",
+        "team": "Kansas City Chiefs",
+        "conference": "AFC",
+        "division": "AFC West",
+        "yearsInLeague": 8,
+        "college": "Texas Tech University",
+        "hometown": "Tyler, Texas",
+        "playerQuote": {
+            "plaintext": "Every time I step on that field, I want to give everything I have. This game means everything to me and to this city."
+        },
+        "careerHighlight": {
+            "plaintext": "Patrick Mahomes has established himself as the defining quarterback of his generation. Selected 10th overall in the 2017 NFL Draft, he led the Kansas City Chiefs to four Super Bowl titles (LIV, LVII, LVIII, LIX) and earned three Super Bowl MVP awards. A three-time NFL MVP (2018, 2022, 2024), Mahomes owns a career passer rating above 105 and holds multiple single-season records for a quarterback under 25. He has redefined the position with his improvisation, arm talent, and clutch performance, cementing Kansas City as the defining dynasty of the modern NFL era."
+        },
+        "accolades": [
+            "4x Super Bowl Champion (LIV, LVII, LVIII, LIX)",
+            "3x Super Bowl MVP (LIV, LVII, LIX)",
+            "3x NFL MVP (2018, 2022, 2024)",
+            "6x Pro Bowl Selection",
+            "NFL Offensive Player of the Year 2018",
+            "First-Team All-Pro 2018, 2022"
+        ]
+    },
+    "/content/dam/26H1/nfl/tyreek-hill": {
+        "playerName": "Tyreek Hill",
+        "jerseyNumber": 10,
+        "position": "Wide Receiver",
+        "team": "Miami Dolphins",
+        "conference": "AFC",
+        "division": "AFC East",
+        "yearsInLeague": 9,
+        "college": "West Alabama",
+        "hometown": "Hollywood, Florida",
+        "playerQuote": {
+            "plaintext": "Speed is a gift, but football is a craft. I work on every route, every release, every detail \u2014 speed just opens the door."
+        },
+        "careerHighlight": {
+            "plaintext": "Tyreek Hill is one of the most electrifying playmakers in NFL history. After winning Super Bowl LIV with the Kansas City Chiefs, he was traded to the Miami Dolphins in 2022 and immediately set the NFL single-season receiving yards record with 1,799 yards in 2023. A seven-time Pro Bowl selection and one of the fastest players ever timed in the league, Hill has redefined what a receiver can do both after the catch and on deep routes. His combination of elite speed, precise route-running, and competitive fire make him one of the most feared opponents in any given week."
+        },
+        "accolades": [
+            "Super Bowl Champion (LIV)",
+            "7x Pro Bowl Selection",
+            "NFL receiving yards single-season record holder (1,799 in 2023)",
+            "First-Team All-Pro 2016, 2018, 2020",
+            "NFL 100th Anniversary All-Time Team"
+        ]
+    },
+    "/content/dam/26H1/nfl/justin-jefferson": {
+        "playerName": "Justin Jefferson",
+        "jerseyNumber": 18,
+        "position": "Wide Receiver",
+        "team": "Minnesota Vikings",
+        "conference": "NFC",
+        "division": "NFC North",
+        "yearsInLeague": 5,
+        "college": "LSU",
+        "hometown": "St. Rose, Louisiana",
+        "playerQuote": {
+            "plaintext": "Records are made to be broken, but legacies are built every Sunday. I want to be remembered as someone who changed the game."
+        },
+        "careerHighlight": {
+            "plaintext": "Justin Jefferson is widely regarded as the best wide receiver in football today. Drafted 22nd overall in 2020 out of LSU, he became only the second player in NFL history to record 3,000+ receiving yards in his first two seasons. He won the NFL Offensive Player of the Year Award in 2022 after recording 1,809 receiving yards, setting a new Vikings single-season record. His trademark 'Griddy' celebration has become one of the most recognizable in professional sports. Jefferson's combination of elite route-running, contested catch ability, and yards after catch have made him the most complete receiver of his era."
+        },
+        "accolades": [
+            "NFL Offensive Player of the Year 2022",
+            "NFL receiving yards single-season record (1,809 in 2022 \u2013 Vikings record)",
+            "4x Pro Bowl Selection",
+            "First-Team All-Pro 2022, 2023",
+            "NFL 3,000+ receiving yards in first two seasons (second in history)"
+        ]
+    }
+}

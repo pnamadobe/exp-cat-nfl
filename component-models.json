@@ -266,11 +266,14 @@
     "id": "player-spotlight",
     "fields": [
       {
-        "component": "text",
+        "component": "aem-content",
         "name": "cfPath",
-        "label": "Content Fragment path",
+        "label": "Player Content Fragment",
         "valueType": "string",
-        "required": true
+        "required": true,
+        "validation": {
+          "rootPath": "/content/dam/26H1/nfl"
+        }
       }
     ]
   }

@@ -337,13 +337,13 @@
           "plugins": {
             "da": {
               "name": "player-spotlight",
-              "unsafeHTML": "<div class=\"player-spotlight\"><div><div>/content/dam/26H1/nfl/patrick-mahomes</div></div></div>",
+              "unsafeHTML": "<div class=\"player-spotlight\"><div><div><p>/content/dam/26H1/nfl/patrick-mahomes</p></div></div></div>",
               "columns": 1,
               "rows": 1,
               "fields": [
                 {
                   "name": "cfPath",
-                  "selector": "div>div"
+                  "selector": "div>div>p"
                 }
               ]
             }

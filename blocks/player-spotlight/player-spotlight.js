@@ -32,7 +32,26 @@ async function fetchPlayer(path) {
     const json = await resp.json();
     return json?.data?.nflPlayerSpotlightByPath?.item ?? null;
   } catch (e) {
-    // network / CORS failure — leave the block empty rather than break the page
+    // network / CORS failure (e.g. an editor origin AEM doesn't allow)
+    return null;
+  }
+}
+
+/**
+ * Same-origin snapshot used only when the live AEM fetch is blocked — namely
+ * inside editors (Universal Editor / DA) whose origin AEM's CORS doesn't allow.
+ * players.json is served from the same host as this module, so no CORS applies.
+ * The published site always uses live data; this just powers the editor preview.
+ * @param {string} path DAM path
+ * @returns {Promise<object|null>}
+ */
+async function fetchPreview(path) {
+  try {
+    const resp = await fetch(new URL('./players.json', import.meta.url));
+    if (!resp.ok) return null;
+    const data = await resp.json();
+    return data[path] ?? null;
+  } catch (e) {
     return null;
   }
 }
@@ -90,16 +109,23 @@ function renderPlaceholder(path) {
 }
 
 export default async function decorate(block) {
-  // The CF path comes from the first cell — either a link or plain text.
+  // The CF path comes from the first cell — could be plain text, a link href,
+  // or an absolute URL (depending on how DA/UE authored it). Pull out the
+  // /content/dam/... portion so any of those forms resolve.
   const link = block.querySelector('a');
-  const path = (link ? link.getAttribute('href') : block.textContent).trim();
+  const raw = (link ? link.getAttribute('href') : block.textContent).trim();
+  const match = raw.match(/\/content\/dam\/[^\s"']+/);
+  const path = match ? match[0] : raw;
 
   block.textContent = '';
   block.dataset.cfPath = path;
 
-  const player = path.startsWith('/content/dam') ? await fetchPlayer(path) : null;
+  // Live AEM data on the published site; same-origin snapshot in editors where
+  // the cross-origin AEM fetch is CORS-blocked. Placeholder only if both miss.
+  let player = null;
+  if (path.startsWith('/content/dam')) {
+    player = await fetchPlayer(path) || await fetchPreview(path);
+  }
 
-  // Fall back to a visible placeholder so the block stays selectable in editors
-  // (UE/DA) when the fetch is blocked — never collapse to an invisible div.
   block.append(player ? renderPlayer(player) : renderPlaceholder(path));
 }
