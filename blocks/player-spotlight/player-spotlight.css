@@ -99,8 +99,14 @@
   background: rgb(0 133 202 / 12%);
 }
 
-.player-spotlight-error {
-  display: none;
+/* Shown in editors (UE/DA) when the live CF fetch is CORS-blocked */
+.player-spotlight-placeholder {
+  border-left-color: rgb(255 255 255 / 30%);
+  background: linear-gradient(135deg, var(--nfl-legacy-blue) 0%, var(--nfl-gridiron-black) 70%);
+}
+
+.player-spotlight-placeholder .player-spotlight-name {
+  font-size: var(--heading-font-size-m);
 }
 
 @media (width >= 900px) {

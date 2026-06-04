@@ -66,6 +66,29 @@ function renderPlayer(p) {
   return card;
 }
 
+/**
+ * Visible placeholder shown when the live CF can't be fetched (e.g. inside an
+ * editor whose origin AEM's CORS allowlist doesn't cover, like *.ue.da.live).
+ * Keeps the block selectable/editable instead of collapsing to nothing.
+ * @param {string} path the bound CF path
+ * @returns {HTMLElement}
+ */
+function renderPlaceholder(path) {
+  const el = document.createElement('div');
+  el.className = 'player-spotlight-card player-spotlight-placeholder';
+  el.innerHTML = `
+    <div class="player-spotlight-content">
+      <p class="player-spotlight-position">Player Spotlight</p>
+      <h3 class="player-spotlight-name">Content Fragment</h3>
+      <p class="player-spotlight-meta">${path || '(no path set)'}</p>
+      <p class="player-spotlight-highlight">
+        Live preview is only available on the published site.
+      </p>
+    </div>
+  `;
+  return el;
+}
+
 export default async function decorate(block) {
   // The CF path comes from the first cell — either a link or plain text.
   const link = block.querySelector('a');
@@ -74,16 +97,9 @@ export default async function decorate(block) {
   block.textContent = '';
   block.dataset.cfPath = path;
 
-  if (!path || !path.startsWith('/content/dam')) {
-    block.classList.add('player-spotlight-error');
-    return;
-  }
+  const player = path.startsWith('/content/dam') ? await fetchPlayer(path) : null;
 
-  const player = await fetchPlayer(path);
-  if (!player) {
-    block.classList.add('player-spotlight-error');
-    return;
-  }
-
-  block.append(renderPlayer(player));
+  // Fall back to a visible placeholder so the block stays selectable in editors
+  // (UE/DA) when the fetch is blocked — never collapse to an invisible div.
+  block.append(player ? renderPlayer(player) : renderPlaceholder(path));
 }
