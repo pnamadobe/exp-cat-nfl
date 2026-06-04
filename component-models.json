@@ -266,14 +266,16 @@
     "id": "player-spotlight",
     "fields": [
       {
-        "component": "aem-content-fragment",
+        "component": "select",
         "name": "cfPath",
-        "label": "Player Content Fragment",
+        "label": "Player",
         "valueType": "string",
         "required": true,
-        "validation": {
-          "rootPath": "/content/dam/26H1/nfl"
-        }
+        "options": [
+          { "name": "Patrick Mahomes — Chiefs", "value": "/content/dam/26H1/nfl/patrick-mahomes" },
+          { "name": "Tyreek Hill — Dolphins", "value": "/content/dam/26H1/nfl/tyreek-hill" },
+          { "name": "Justin Jefferson — Vikings", "value": "/content/dam/26H1/nfl/justin-jefferson" }
+        ]
       }
     ]
   }
