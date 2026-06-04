@@ -1,7 +1,10 @@
 .video-hero {
+  /* full-bleed: break out of the centered content column to the viewport edges */
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0 0 24px;
+  margin-left: calc(50% - 50vw);
   text-align: center;
-  max-width: 100%;
-  margin: 24px auto;
 }
 
 .video-hero[data-embed-loaded='false']:not(.placeholder) {
@@ -14,8 +17,14 @@
   justify-content: center;
 }
 
-.video-hero video {
-  max-width: 100%;
+/* fill the full viewport width; 16:9 source => no letterbox bars */
+.video-hero video,
+.video-hero iframe {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  object-fit: cover;
 }
 
 .video-hero .video-hero-placeholder {
