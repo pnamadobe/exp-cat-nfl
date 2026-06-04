@@ -266,7 +266,7 @@
     "id": "player-spotlight",
     "fields": [
       {
-        "component": "aem-content",
+        "component": "aem-content-fragment",
         "name": "cfPath",
         "label": "Player Content Fragment",
         "valueType": "string",
