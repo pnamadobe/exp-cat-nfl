@@ -153,6 +153,19 @@ header nav .nav-brand img {
   height: auto;
 }
 
+header nav .section:has(img) {
+  order: -1;
+  align-self: center;
+  margin-right: auto;
+}
+
+header nav .section .default-content-wrapper img {
+  height: var(--nav-height);
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
