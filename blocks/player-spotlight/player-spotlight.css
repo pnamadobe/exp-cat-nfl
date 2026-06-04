@@ -1,0 +1,116 @@
+/*
+ * Player Spotlight Block — NFL brand styling.
+ * Uses the brand palette / fonts declared in /styles/styles.css.
+ */
+
+.player-spotlight {
+  margin: 2rem 0;
+}
+
+.player-spotlight-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  overflow: hidden;
+  padding: 2rem;
+  border-left: 6px solid var(--nfl-impact-blue);
+  border-radius: 4px;
+  background:
+    linear-gradient(135deg, var(--nfl-legacy-blue) 0%, var(--nfl-gridiron-black) 70%);
+  color: var(--text-color);
+}
+
+/* Oversized jersey number as a backdrop graphic */
+.player-spotlight-jersey {
+  position: absolute;
+  top: -2.5rem;
+  right: -0.5rem;
+  font-family: var(--heading-font-family);
+  font-size: 16rem;
+  line-height: 1;
+  color: var(--nfl-impact-blue);
+  opacity: 0.14;
+  pointer-events: none;
+  user-select: none;
+}
+
+.player-spotlight-content {
+  position: relative;
+  z-index: 1;
+  max-width: 60ch;
+}
+
+.player-spotlight-position {
+  margin: 0 0 0.25rem;
+  font-size: var(--body-font-size-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--nfl-impact-blue);
+}
+
+.player-spotlight-name {
+  margin: 0 0 0.5rem;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xl);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.player-spotlight-meta {
+  margin: 0 0 1.25rem;
+  font-size: var(--body-font-size-xs);
+  color: rgb(255 255 255 / 70%);
+}
+
+.player-spotlight-quote {
+  margin: 0 0 1.25rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--nfl-shield-red);
+  font-size: var(--body-font-size-m);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.player-spotlight-quote::before { content: '\201C'; }
+.player-spotlight-quote::after { content: '\201D'; }
+
+.player-spotlight-highlight {
+  margin: 0 0 1.25rem;
+  font-size: var(--body-font-size-s);
+  line-height: 1.6;
+  color: rgb(255 255 255 / 88%);
+}
+
+.player-spotlight-accolades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.player-spotlight-accolades li {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--nfl-impact-blue);
+  border-radius: 999px;
+  font-size: var(--body-font-size-xs);
+  background: rgb(0 133 202 / 12%);
+}
+
+.player-spotlight-error {
+  display: none;
+}
+
+@media (width >= 900px) {
+  .player-spotlight-card {
+    grid-template-columns: 1fr;
+    padding: 3rem;
+  }
+
+  .player-spotlight-jersey {
+    font-size: 22rem;
+    top: -3.5rem;
+  }
+}
