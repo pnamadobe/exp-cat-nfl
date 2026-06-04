@@ -5,11 +5,20 @@
   margin: 0 0 24px;
   margin-left: calc(50% - 50vw);
   text-align: center;
+
+  /*
+   * The source MP4 ships 1920x1080 with cinematic letterbox burned into the
+   * frame (real content is 1920x864, 108px black bars top & bottom). Box the
+   * hero to the content aspect (20:9) and object-fit:cover the 16:9 video so
+   * those bars are cropped out instead of shown.
+   */
+  aspect-ratio: 1920 / 864;
+  overflow: hidden;
 }
 
 .video-hero[data-embed-loaded='false']:not(.placeholder) {
-  /* reserve an approximate space to avoid extensive layout shifts */
-  aspect-ratio: 16 / 9;
+  /* reserve matching space to avoid layout shift */
+  aspect-ratio: 1920 / 864;
 }
 
 .video-hero > div {
@@ -17,13 +26,12 @@
   justify-content: center;
 }
 
-/* fill the full viewport width; 16:9 source => no letterbox bars */
+/* fill the cropped box; cover trims the baked-in top/bottom letterbox */
 .video-hero video,
 .video-hero iframe {
   display: block;
-  width: 100vw;
-  max-width: 100vw;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
